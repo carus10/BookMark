@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - BookMark</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/statistics.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                BookMark
+                <span class="logo-subtitle">Mind Accelerating Reading Platform</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="library.html">My Books</a></li>
+                    <li><a href="statistics.html" class="active">Statistics</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Statistics</h2>
+        </div>
+    </section>
+
+    <section class="stats-container">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="stat-value" id="total-words">0</div>
+                    <div class="stat-label">Total Words Read</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <div class="stat-value" id="daily-words">0</div>
+                    <div class="stat-label">Words Read Today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="stat-value" id="avg-speed">0</div>
+                    <div class="stat-label">Average Speed (WPM)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-value" id="book-count">0</div>
+                    <div class="stat-label">Total Books</div>
+                </div>
+            </div>
+
+            <div class="goal-progress">
+                <h3 class="goal-title">Daily Goal Progress</h3>
+                <div class="goal-bar">
+                    <div class="goal-progress-bar" id="goal-progress-bar" style="width: 0%;"></div>
+                </div>
+                <p class="goal-text" id="goal-text">0 / 1000 words (0%)</p>
+            </div>
+
+            <div class="chart-container">
+                <h3 class="chart-title">Weekly Reading Statistics</h3>
+                <div class="chart" id="weekly-chart">
+                    <!-- Charts will be generated with JavaScript -->
+                </div>
+            </div>
+
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Book</th>
+                        <th>Words Read</th>
+                        <th>Total Words</th>
+                        <th>Progress</th>
+                        <th>Average Speed</th>
+                    </tr>
+                </thead>
+                <tbody id="stats-table-body">
+                    <!-- Table data will be filled with JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookMark - Mind Accelerating Reading Platform</p>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/statistics_fixed.js"></script>
+</body>
+</html>

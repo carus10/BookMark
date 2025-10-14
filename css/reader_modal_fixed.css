@@ -1,0 +1,255 @@
+/* Fixed reader modal styles - removed hover animations */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal-content {
+    position: relative;
+    background: linear-gradient(135deg, var(--darker-bg), var(--dark-bg));
+    margin: 5% auto;
+    padding: 0;
+    width: 80%;
+    max-width: 600px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(93, 138, 168, 0.3);
+    overflow: hidden;
+}
+
+.modal-header {
+    padding: 20px 25px;
+    background: linear-gradient(90deg, var(--dark-bg), var(--darker-bg));
+    color: var(--light-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(93, 138, 168, 0.2);
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+}
+
+.close-modal {
+    color: var(--light-text);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.close-modal:hover {
+    color: var(--accent-color);
+}
+
+.modal-body {
+    padding: 25px;
+    color: var(--light-text);
+}
+
+.preference-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.preference-group label {
+    font-weight: 500;
+    color: var(--light-text);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.preference-group input[type="number"],
+.preference-group select {
+    padding: 12px 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(93, 138, 168, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--light-text);
+    font-family: 'Space Grotesk', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.preference-group input[type="number"]:focus,
+.preference-group select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+.preference-group input[type="color"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: var(--border-radius);
+    background: transparent;
+    cursor: pointer;
+}
+
+.preference-group input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.preference-group input[type="color"]::-webkit-color-swatch {
+    border: 1px solid rgba(93, 138, 168, 0.3);
+    border-radius: var(--border-radius);
+}
+
+#advanced-toggle {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#advanced-settings {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    border: 1px solid rgba(93, 138, 168, 0.1);
+}
+
+.preference-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 20px 0 0;
+    border-top: 1px solid rgba(93, 138, 168, 0.1);
+    margin-top: 20px;
+}
+
+/* Reader Controls Panel - removed hover animations */
+.reader-controls-panel {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(93, 138, 168, 0.2);
+    margin-bottom: 20px;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.control-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--light-text);
+    border: 1px solid rgba(93, 138, 168, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.2rem;
+}
+
+.control-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.control-btn-primary {
+    background: linear-gradient(45deg, var(--secondary-color), #2980b9);
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+}
+
+.control-btn-primary:hover {
+    background: linear-gradient(45deg, #2980b9, var(--secondary-color));
+}
+
+.progress-slider-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 15px;
+}
+
+.progress-slider {
+    flex: 1;
+    height: 8px;
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    outline: none;
+}
+
+.progress-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    cursor: pointer;
+}
+
+.progress-value {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--secondary-color);
+    min-width: 50px;
+    text-align: center;
+}
+
+/* Book mode container for sequential words */
+.book-mode-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0 10%;
+}
+
+.sequential-word {
+    position: absolute;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    color: var(--light-text);
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .control-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .progress-slider-container {
+        width: 100%;
+        order: -1;
+        margin: 0 0 15px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+}

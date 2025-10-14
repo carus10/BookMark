@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - BookMark</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                BookMark
+                <span class="logo-subtitle">Mind Accelerating Reading Platform</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="library.html">My Books</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                    <li><a href="settings.html" class="active">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Settings</h2>
+        </div>
+    </section>
+
+    <section class="settings-container">
+        <div class="container">
+            <div class="settings-group preserve-3d fade-in-up">
+                <h3>Reading Settings</h3>
+                <div class="setting-item">
+                    <label for="default-speed" class="setting-label">Default Reading Speed (WPM)</label>
+                    <input type="range" id="default-speed" class="setting-input" min="100" max="1000" step="50" value="300">
+                    <span id="speed-value">300</span>
+                </div>
+                <div class="setting-item">
+                    <label for="default-mode" class="setting-label">Default Reading Mode</label>
+                    <select id="default-mode" class="setting-select">
+                        <option value="1">Mode 1 - Classic RSVP</option>
+                        <option value="2">Mode 2 - Book Simulation</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="words-per-view-setting" class="setting-label">Words Per View in Mode 2</label>
+                    <input type="range" id="words-per-view-setting" class="setting-input" min="1" max="5" step="1" value="1">
+                    <span id="words-per-view-value">1</span>
+                </div>
+            </div>
+
+            <div class="settings-group preserve-3d fade-in-up delay-200">
+                <h3>Appearance Settings</h3>
+                <div class="setting-item">
+                    <label for="orp-color" class="setting-label">ORP Highlight Color</label>
+                    <input type="color" id="orp-color" class="setting-input" value="#c25b56">
+                </div>
+                <div class="setting-item">
+                    <label for="font-size" class="setting-label">Font Size</label>
+                    <select id="font-size" class="setting-select">
+                        <option value="small">Small</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="large">Large</option>
+                        <option value="x-large">Extra Large</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="font-family" class="setting-label">Font Family</label>
+                    <select id="font-family" class="setting-select">
+                        <option value="sans-serif" selected>Sans-serif</option>
+                        <option value="serif">Serif</option>
+                        <option value="monospace">Monospace</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="settings-group preserve-3d fade-in-up delay-400">
+                <h3>Goal Settings</h3>
+                <div class="setting-item">
+                    <label for="daily-goal" class="setting-label">Daily Reading Goal (Words)</label>
+                    <input type="number" id="daily-goal" class="setting-input" min="100" max="10000" step="100" value="1000">
+                </div>
+            </div>
+
+            <div class="settings-group preserve-3d fade-in-up delay-600">
+                <h3>Data Management</h3>
+                <div class="setting-item buttons">
+                    <button id="export-data" class="btn btn-primary">Export Data</button>
+                    <button id="import-data" class="btn btn-secondary">Import Data</button>
+                    <button id="clear-data" class="btn btn-accent">Clear All Data</button>
+                </div>
+            </div>
+
+            <div class="settings-actions fade-in-up delay-800">
+                <button id="save-settings" class="btn btn-primary">Save Settings</button>
+                <button id="reset-settings" class="btn btn-secondary">Reset to Default</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookMark - Mind Accelerating Reading Platform</p>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>

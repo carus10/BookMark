@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark - Mind Accelerating Reading Platform</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/reader.css">
+    <link rel="stylesheet" href="css/fullscreen.css">
+    <link rel="stylesheet" href="css/premium.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                BookMark
+                <span class="logo-subtitle">Mind Accelerating Reading Platform</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/library.html">My Books</a></li>
+                    <li><a href="pages/statistics.html">Statistics</a></li>
+                    <li><a href="pages/settings.html">Settings</a></li>
+                    <li><a href="pages/premium.html" class="premium-nav-link">Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title">Improve Your Reading Speed</h1>
+                <p class="hero-subtitle">Read 1000+ words per minute with BookMark and absorb information faster.</p>
+                <div class="hero-cta">
+                    <a href="pages/library.html" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="#features" class="btn btn-outline btn-lg">Features</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="reading-demo" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience Speed Reading</h2>
+                <div class="reading-demo-container preserve-3d">
+                    <div class="reading-mode-tabs">
+                        <button class="reading-mode-tab active" data-mode="1">Classic RSVP</button>
+                        <button class="reading-mode-tab" data-mode="2">Book Simulation</button>
+                    </div>
+                    <div class="reading-demo-display">
+                        <div id="demo-display" class="demo-display">
+                            <div id="demo-word" class="demo-word">
+                                <span>Tap</span> <span class="orp">s</span><span>tart</span> <span>to</span> <span>see</span> <span>speed</span> <span>reading</span> <span>in</span> <span>action</span>
+                            </div>
+                        </div>
+                        <div class="demo-controls">
+                            <button id="demo-start" class="btn btn-primary">
+                                <i class="fas fa-play"></i> Start Demo
+                            </button>
+                            <div class="demo-speed">
+                                <label>Speed: <span id="demo-speed-value">300</span> WPM</label>
+                                <input type="range" id="demo-speed" min="100" max="800" step="50" value="300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title">Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card preserve-3d">
+                        <div class="feature-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 16C12.6 16 13.1 16.2 13.4 16.6C13.8 17 14 17.5 14 18C14 18.5 13.8 19 13.4 19.4C13.1 19.8 12.6 20 12 20C11.4 20 10.9 19.8 10.6 19.4C10.2 19 10 18.5 10 18C10 17.5 10.2 17 10.6 16.6C10.9 16.2 11.4 16 12 16M12 4C12.6 4 13.1 4.2 13.4 4.6C13.8 5 14 5.5 14 6C14 6.5 13.8 7 13.4 7.4C13.1 7.8 12.6 8 12 8C11.4 8 10.9 7.8 10.6 7.4C10.2 7 10 6.5 10 6C10 5.5 10.2 5 10.6 4.6C10.9 4.2 11.4 4 12 4M6 16C6.5 16 7 16.2 7.4 16.6C7.8 17 8 17.5 8 18C8 18.5 7.8 19 7.4 19.4C7 19.8 6.5 20 6 20C5.5 20 5 19.8 4.6 19.4C4.2 19 4 18.5 4 18C4 17.5 4.2 17 4.6 16.6C5 16.2 5.5 16 6 16M6 4C6.5 4 7 4.2 7.4 4.6C7.8 5 8 5.5 8 6C8 6.5 7.8 7 7.4 7.4C7 7.8 6.5 8 6 8C5.5 8 5 7.8 4.6 7.4C4.2 7 4 6.5 4 6C4 5.5 4.2 5 4.6 4.6C5 4.2 5.5 4 6 4M18 16C18.5 16 19 16.2 19.4 16.6C19.8 17 20 17.5 20 18C20 18.5 19.8 19 19.4 19.4C19 19.8 18.5 20 18 20C17.5 20 17 19.8 16.6 19.4C16.2 19 16 18.5 16 18C16 17.5 16.2 17 16.6 16.6C17 16.2 17.5 16 18 16M18 4C18.5 4 19 4.2 19.4 4.6C19.8 5 20 5.5 20 6C20 6.5 19.8 7 19.4 7.4C19 7.8 18.5 8 18 8C17.5 8 17 7.8 16.6 7.4C16.2 7 16 6.5 16 6C16 5.5 16.2 5 16.6 4.6C17 4.2 17.5 4 18 4M12 10C12.6 10 13.1 10.2 13.4 10.6C13.8 11 14 11.5 14 12C14 12.5 13.8 13 13.4 13.4C13.1 13.8 12.6 14 12 14C11.4 14 10.9 13.8 10.6 13.4C10.2 13 10 12.5 10 12C10 11.5 10.2 11 10.6 10.6C10.9 10.2 11.4 10 12 10Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Speed Reading Technology</h3>
+                        <p class="feature-description">Increase your reading speed with RSVP (Rapid Serial Visual Presentation) technology that displays words one at a time.</p>
+                    </div>
+                    <div class="feature-card preserve-3d">
+                        <div class="feature-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M21,5C19.89,4.65 18.67,4.5 17.5,4.5C15.55,4.5 13.45,4.9 12,6C10.55,4.9 8.45,4.5 6.5,4.5C4.55,4.5 2.45,4.9 1,6V20.65C1,20.9 1.25,21.15 1.5,21.15C1.6,21.15 1.65,21.1 1.75,21.1C3.1,20.45 5.05,20 6.5,20C8.45,20 10.55,20.4 12,21.5C13.35,20.65 15.8,20 17.5,20C19.15,20 20.85,20.3 22.25,21.05C22.35,21.1 22.4,21.1 22.5,21.1C22.75,21.1 23,20.85 23,20.6V6C22.4,5.55 21.75,5.25 21,5M21,18.5C19.9,18.15 18.7,18 17.5,18C15.8,18 13.35,18.65 12,19.5V8C13.35,7.15 15.8,6.5 17.5,6.5C18.7,6.5 19.9,6.65 21,7V18.5Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Multiple Reading Modes</h3>
+                        <p class="feature-description">Choose between Classic RSVP mode or Book Simulation mode for the reading experience that works best for you.</p>
+                    </div>
+                    <div class="feature-card preserve-3d">
+                        <div class="feature-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M9,17H7V10H9V17M13,17H11V7H13V17M17,17H15V13H17V17Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Statistics Tracking</h3>
+                        <p class="feature-description">Track your reading speed, daily word count, and progress to reach your reading goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Plans & Pricing</h2>
+                <div class="plans-comparison">
+                    <div class="plan-card">
+                        <div class="plan-name">Free</div>
+                        <div class="plan-price">$0 <span>/ forever</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Basic reading experience</li>
+                            <li><i class="fas fa-check"></i> 1 book limit</li>
+                            <li><i class="fas fa-check"></i> Standard reading modes</li>
+                            <li class="feature-unavailable"><i class="fas fa-times"></i> Unlimited books</li>
+                            <li class="feature-unavailable"><i class="fas fa-times"></i> Advanced statistics</li>
+                        </ul>
+                        <div class="plan-cta">
+                            <a href="pages/library.html" class="premium-subscribe-btn">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="plan-card premium">
+                        <div class="plan-badge">Recommended</div>
+                        <div class="plan-name">Premium</div>
+                        <div class="plan-price">$5 <span>/ year</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Enhanced reading experience</li>
+                            <li><i class="fas fa-check"></i> Unlimited books</li>
+                            <li><i class="fas fa-check"></i> All reading modes</li>
+                            <li><i class="fas fa-check"></i> Advanced statistics</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                        </ul>
+                        <div class="plan-cta">
+                            <a href="pages/premium.html" class="premium-subscribe-btn">Upgrade Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Quick Access</h2>
+                <div class="quick-access">
+                    <div class="quick-access-item">
+                        <a href="pages/library.html" class="quick-access-link preserve-3d">
+                            <i class="fas fa-book"></i> My Books
+                        </a>
+                    </div>
+                    <div class="quick-access-item">
+                        <a href="pages/reader.html" class="quick-access-link preserve-3d">
+                            <i class="fas fa-glasses"></i> Reading Screen
+                        </a>
+                    </div>
+                    <div class="quick-access-item">
+                        <a href="pages/statistics.html" class="quick-access-link preserve-3d">
+                            <i class="fas fa-chart-line"></i> Statistics
+                        </a>
+                    </div>
+                    <div class="quick-access-item">
+                        <a href="pages/settings.html" class="quick-access-link preserve-3d">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </div>
+                    <div class="quick-access-item">
+                        <a href="pages/premium.html" class="quick-access-link preserve-3d premium-feature">
+                            <i class="fas fa-crown"></i> Premium
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Statistics Summary</h2>
+                <div class="stats-summary preserve-3d">
+                    <p>No statistics available yet. Visit <a href="pages/library.html">My Books</a> to start reading.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookMark - Mind Accelerating Reading Platform</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/subscription.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>

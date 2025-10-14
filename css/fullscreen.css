@@ -1,0 +1,131 @@
+/* Fullscreen specific styles for BookMark reader */
+
+.fullscreen-reader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fullscreen-display {
+    width: 90%;
+    max-width: 1200px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.fullscreen-word {
+    font-size: 4rem;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.fullscreen-book-container {
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0 10%;
+}
+
+.fullscreen-sequential-word {
+    position: absolute;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 4rem;
+    color: #FFFFFF;
+    text-align: left;
+    animation: sequentialWordSlide 0.8s ease-out;
+}
+
+.fullscreen-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+    opacity: 1; /* Always visible by default */
+    z-index: 10000; /* Ensure it's above other elements */
+}
+
+/* Slightly fade when not hovered for a cleaner look */
+.fullscreen-reader:not(:hover) .fullscreen-controls {
+    opacity: 0.8;
+}
+
+.fullscreen-reader:hover .fullscreen-controls {
+    opacity: 1;
+}
+
+.fullscreen-btn {
+    background: rgba(93, 138, 168, 0.5);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fullscreen-btn:hover {
+    background: rgba(93, 138, 168, 0.8);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.fullscreen-exit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.fullscreen-reader:hover .fullscreen-exit {
+    opacity: 1;
+}
+
+.fullscreen-exit:hover {
+    background: rgba(194, 91, 86, 0.5);
+}
+
+/* Ensure body and html are black when in fullscreen mode */
+body.fullscreen-active,
+html.fullscreen-active {
+    background-color: #000000;
+    overflow: hidden;
+}

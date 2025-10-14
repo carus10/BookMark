@@ -1,0 +1,401 @@
+/* Premium page styles */
+.premium-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.premium-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.premium-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.premium-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.premium-status {
+    background-color: var(--bg-color-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.premium-active, .premium-inactive {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.premium-active {
+    color: #4CAF50;
+}
+
+.premium-inactive {
+    color: var(--text-color-secondary);
+}
+
+.premium-active i, .premium-inactive i {
+    font-size: 1.5rem;
+}
+
+.premium-details {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.premium-details p {
+    margin: 0.5rem 0;
+    color: var(--text-color-secondary);
+}
+
+.plans-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.plan-card {
+    background-color: var(--bg-color-secondary);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card.premium {
+    border: 2px solid var(--primary-color);
+}
+
+.plan-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.plan-price span {
+    font-size: 1rem;
+    color: var(--text-color-secondary);
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.plan-features li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.plan-features i {
+    color: var(--primary-color);
+}
+
+.plan-features .feature-unavailable {
+    color: var(--text-color-tertiary);
+}
+
+.plan-features .feature-unavailable i {
+    color: var(--text-color-tertiary);
+}
+
+.plan-cta {
+    text-align: center;
+}
+
+.premium-subscribe-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.premium-subscribe-btn:hover {
+    background-color: var(--primary-color-dark);
+    transform: translateY(-2px);
+}
+
+.premium-subscribe-btn:disabled {
+    background-color: var(--text-color-tertiary);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.premium-features {
+    margin-bottom: 3rem;
+}
+
+.premium-features-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: var(--bg-color-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(93, 138, 168, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.feature-icon i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.feature-description {
+    color: var(--text-color-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.faq-section {
+    margin-bottom: 3rem;
+}
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.faq-item {
+    background-color: var(--bg-color-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.faq-answer {
+    color: var(--text-color-secondary);
+    line-height: 1.5;
+}
+
+/* Library page subscription elements */
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.book-limit-indicator {
+    font-size: 0.95rem;
+    color: var(--text-color-secondary);
+}
+
+.upgrade-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upgrade-btn:hover {
+    background-color: var(--primary-color-dark);
+    transform: translateY(-2px);
+}
+
+.premium-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.premium-feature.premium-locked {
+    opacity: 0.6;
+    position: relative;
+}
+
+.premium-feature.premium-locked::after {
+    content: "Premium";
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Upgrade modal */
+.upgrade-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.upgrade-modal-content {
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.upgrade-modal h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.upgrade-modal p {
+    margin-bottom: 1rem;
+    color: var(--text-color-secondary);
+}
+
+.upgrade-modal-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.upgrade-modal-actions button {
+    flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .plans-comparison {
+        grid-template-columns: 1fr;
+    }
+    
+    .premium-header {
+        margin-bottom: 2rem;
+    }
+    
+    .premium-title {
+        font-size: 2rem;
+    }
+    
+    .premium-features-title, .faq-title {
+        font-size: 1.5rem;
+    }
+    
+    .library-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .upgrade-modal-content {
+        padding: 1.5rem;
+    }
+}

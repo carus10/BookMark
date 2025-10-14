@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Books - BookMark</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/premium.css">
+    <link rel="stylesheet" href="../css/library.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                BookMark
+                <span class="logo-subtitle">Mind Accelerating Reading Platform</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="library.html" class="active">My Books</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="premium.html">Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>My Books</h2>
+        </div>
+    </section>
+
+    <section class="library-container">
+        <div class="container">
+            <div class="upload-options">
+                <div class="upload-tabs">
+                    <button class="upload-tab active" data-tab="file-upload">Upload File</button>
+                    <button class="upload-tab" data-tab="paste-text">Paste Text</button>
+                </div>
+                
+                <div class="upload-content">
+                    <div class="upload-panel active" id="file-upload">
+                        <div class="upload-area" id="upload-area">
+                            <div class="upload-icon">
+                                <i class="fas fa-file-upload"></i>
+                            </div>
+                            <h3>Upload a Book</h3>
+                            <p>Drag & drop a PDF or TXT file here, or click to browse</p>
+                            <input type="file" id="file-input" class="file-input" accept=".pdf,.txt">
+                        </div>
+                    </div>
+                    
+                    <div class="upload-panel" id="paste-text">
+                        <div class="paste-area">
+                            <div class="paste-header">
+                                <div class="paste-icon">
+                                    <i class="fas fa-paste"></i>
+                                </div>
+                                <h3>Paste Text</h3>
+                                <p>Copy and paste text to create a new book</p>
+                            </div>
+                            <div class="paste-form">
+                                <div class="form-group">
+                                    <label for="book-title">Book Title</label>
+                                    <input type="text" id="book-title" placeholder="Enter a title for your book">
+                                </div>
+                                <div class="form-group">
+                                    <label for="book-content">Book Content</label>
+                                    <textarea id="book-content" placeholder="Paste your text here..."></textarea>
+                                </div>
+                                <button id="create-book-btn" class="btn btn-primary">Create Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="library-controls">
+                <div class="filter-group">
+                    <label for="filter-select">Filter:</label>
+                    <select id="filter-select" class="filter-select">
+                        <option value="all">All Books</option>
+                        <option value="reading">Currently Reading</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div class="sort-group">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select" class="sort-select">
+                        <option value="recent">Recently Added</option>
+                        <option value="title">Title</option>
+                        <option value="progress">Progress</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="book-grid" id="book-grid">
+                <!-- Books will be loaded dynamically -->
+            </div>
+
+            <div id="empty-library" style="display: none;">
+                <p>Your library is empty. Upload a book or paste text to get started.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookMark - Mind Accelerating Reading Platform</p>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/fileHandler_paste_fixed.js"></script>
+    <script src="../js/subscription.js"></script>
+</body>
+</html>

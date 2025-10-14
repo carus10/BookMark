@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium - BookMark</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/premium.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                BookMark
+                <span class="logo-subtitle">Mind Accelerating Reading Platform</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="library.html">My Books</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Premium</h2>
+        </div>
+    </section>
+
+    <section class="premium-container">
+        <div class="premium-header">
+            <h1 class="premium-title">Upgrade to Premium</h1>
+            <p class="premium-subtitle">Unlock unlimited books and enhance your reading experience with BookMark Premium.</p>
+        </div>
+
+        <div class="premium-status" id="premium-status">
+            <!-- This will be populated dynamically based on subscription status -->
+            <div class="premium-inactive">
+                <i class="fas fa-info-circle"></i>
+                <span>You are currently on the Free plan</span>
+            </div>
+        </div>
+
+        <div class="plans-comparison">
+            <div class="plan-card">
+                <div class="plan-name">Free</div>
+                <div class="plan-price">$0 <span>/ forever</span></div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Basic reading experience</li>
+                    <li><i class="fas fa-check"></i> 1 book limit</li>
+                    <li><i class="fas fa-check"></i> Standard reading modes</li>
+                    <li class="feature-unavailable"><i class="fas fa-times"></i> Unlimited books</li>
+                    <li class="feature-unavailable"><i class="fas fa-times"></i> Advanced statistics</li>
+                    <li class="feature-unavailable"><i class="fas fa-times"></i> Priority support</li>
+                </ul>
+                <div class="plan-cta">
+                    <button class="premium-subscribe-btn" disabled>Current Plan</button>
+                </div>
+            </div>
+
+            <div class="plan-card premium">
+                <div class="plan-badge">Recommended</div>
+                <div class="plan-name">Premium</div>
+                <div class="plan-price">$5 <span>/ year</span></div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> Enhanced reading experience</li>
+                    <li><i class="fas fa-check"></i> Unlimited books</li>
+                    <li><i class="fas fa-check"></i> All reading modes</li>
+                    <li><i class="fas fa-check"></i> Advanced statistics</li>
+                    <li><i class="fas fa-check"></i> Priority support</li>
+                    <li><i class="fas fa-check"></i> Future premium features</li>
+                </ul>
+                <div class="plan-cta">
+                    <button class="premium-subscribe-btn" id="premium-subscribe-btn">Upgrade to Premium</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="premium-features">
+            <h2 class="premium-features-title">Premium Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="feature-title">Unlimited Books</h3>
+                    <p class="feature-description">Add as many books as you want to your library without any restrictions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Advanced Statistics</h3>
+                    <p class="feature-description">Get detailed insights into your reading habits with advanced analytics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Enhanced Performance</h3>
+                    <p class="feature-description">Enjoy a smoother reading experience with optimized performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">Priority Support</h3>
+                    <p class="feature-description">Get faster responses and dedicated support for any issues you encounter.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">How does the subscription work?</h3>
+                <p class="faq-answer">When you subscribe to Premium, you'll immediately get access to all premium features including unlimited books. Your subscription will be valid for one year from the date of purchase.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can I cancel my subscription?</h3>
+                <p class="faq-answer">Yes, you can cancel your subscription at any time. You'll continue to have access to premium features until the end of your billing period.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What happens to my books if I downgrade?</h3>
+                <p class="faq-answer">If you downgrade to the Free plan, you'll still have access to your existing books, but you won't be able to add new books beyond the 1 book limit.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Is there a refund policy?</h3>
+                <p class="faq-answer">We offer a 30-day money-back guarantee. If you're not satisfied with your Premium subscription, you can request a refund within 30 days of purchase.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookMark - Mind Accelerating Reading Platform</p>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/subscription.js"></script>
+</body>
+</html>

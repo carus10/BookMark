@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Screen - BookMark</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reader.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/reader_modal_fixed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                BookMark
+                <span class="logo-subtitle">Mind Accelerating Reading Platform</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="library.html">My Books</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="reader-container">
+        <div class="reader-header">
+            <h2 class="book-title">Book Title</h2>
+            <div class="reader-controls">
+                <button id="back-to-library" class="btn btn-secondary btn-sm">
+                    <i class="fas fa-arrow-left"></i> My Books
+                </button>
+                <button id="settings-btn" class="btn btn-accent btn-sm">
+                    <i class="fas fa-cog"></i> Settings
+                </button>
+            </div>
+        </div>
+
+        <div class="reader-main">
+            <div id="reader-display" class="reader-display">
+                <div id="current-word" class="current-word">
+                    Click <span class="orp">s</span>tart below to begin reading.
+                </div>
+                <div id="book-mode-container" class="book-mode-container" style="display: none;">
+                    <div id="sequential-word" class="sequential-word"></div>
+                </div>
+            </div>
+
+            <div class="reader-controls-panel">
+                <div class="control-buttons">
+                    <button id="prev-btn" class="control-btn">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button id="play-pause" class="control-btn control-btn-primary">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next-btn" class="control-btn">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <div class="progress-slider-container">
+                        <input type="range" id="progress-slider" class="progress-slider" min="0" max="100" value="0">
+                        <span id="progress-value" class="progress-value">0%</span>
+                    </div>
+                    <button id="settings-icon" class="control-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="reader-footer">
+                <div class="reader-progress">
+                    <span id="progress-start" class="progress-percentage">0%</span>
+                    <div class="progress-bar-container">
+                        <div id="progress-bar" class="progress-bar" style="width: 0%;"></div>
+                    </div>
+                    <span id="progress-end" class="progress-percentage">100%</span>
+                </div>
+
+                <div class="reader-settings">
+                    <div class="setting-group">
+                        <label for="speed-slider" class="setting-label">Speed:</label>
+                        <input type="range" id="speed-slider" class="speed-slider" min="100" max="1000" step="50" value="300">
+                        <span id="speed-value" class="speed-value">300</span>
+                    </div>
+                    <div class="setting-group">
+                        <label for="mode-select" class="setting-label">Mode:</label>
+                        <select id="mode-select" class="mode-select">
+                            <option value="1">Mode 1 - Classic RSVP</option>
+                            <option value="2">Mode 2 - Book Simulation</option>
+                        </select>
+                    </div>
+                    <div class="setting-group" id="words-per-view-container" style="display: none;">
+                        <label for="words-per-view" class="setting-label">Words Per View:</label>
+                        <input type="range" id="words-per-view" min="1" max="5" step="1" value="1">
+                        <span id="words-per-view-value">1</span>
+                    </div>
+                </div>
+
+                <div class="reader-buttons">
+                    <button id="play-pause-btn" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button id="restart" class="btn btn-secondary">
+                        <i class="fas fa-redo"></i> Restart
+                    </button>
+                    <button id="bookmark" class="btn btn-accent">
+                        <i class="fas fa-bookmark"></i> Bookmark
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preferences Modal -->
+    <div id="preferences-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Preferences</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="preference-group">
+                    <label for="wpm-input">Words per minute</label>
+                    <input type="number" id="wpm-input" min="100" max="1000" step="10" value="300">
+                </div>
+                <div class="preference-group">
+                    <label for="window-size">Window Size (w x h)</label>
+                    <select id="window-size">
+                        <option value="700x500">700 x 500</option>
+                        <option value="800x600">800 x 600</option>
+                        <option value="900x700">900 x 700</option>
+                        <option value="1000x800">1000 x 800</option>
+                    </select>
+                </div>
+                <div class="preference-group">
+                    <label for="chunk-size">Chunk size (words)</label>
+                    <select id="chunk-size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="preference-group">
+                    <label for="font-size">Font size</label>
+                    <select id="font-size">
+                        <option value="30">30</option>
+                        <option value="40" selected>40</option>
+                        <option value="50">50</option>
+                        <option value="60">60</option>
+                        <option value="70">70</option>
+                    </select>
+                </div>
+                <div class="preference-group">
+                    <label for="font-color">Font color</label>
+                    <input type="color" id="font-color" value="#FFFFFF">
+                </div>
+                <div class="preference-group">
+                    <label for="bg-color">Background color</label>
+                    <input type="color" id="bg-color" value="#000000">
+                </div>
+                <div class="preference-group">
+                    <label for="text-align">Alignment</label>
+                    <select id="text-align">
+                        <option value="center" selected>center</option>
+                        <option value="left">left</option>
+                        <option value="right">right</option>
+                        <option value="justify">justify</option>
+                    </select>
+                </div>
+                <div class="preference-group">
+                    <a href="#" id="advanced-toggle">Advanced</a>
+                </div>
+                <div id="advanced-settings" style="display: none;">
+                    <div class="preference-group">
+                        <label>
+                            <input type="checkbox" id="speed-variability"> 
+                            Speed variability: slow down for larger chunks and speed up for smaller chunks
+                        </label>
+                    </div>
+                    <div class="preference-group">
+                        <label>
+                            <input type="checkbox" id="new-chunk-at-sentence"> 
+                            Start new chunk at end of sentences and paragraphs
+                        </label>
+                    </div>
+                    <div class="preference-group">
+                        <label>
+                            <input type="checkbox" id="pause-at-sentence"> 
+                            Slight pause at end of sentences and paragraphs
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="restore-defaults" class="btn btn-secondary">Restore Defaults</button>
+                    <button id="save-preferences" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookMark - Mind Accelerating Reading Platform</p>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/reader_fixed.js"></script>
+    <script src="../js/reader_settings.js"></script>
+</body>
+</html>

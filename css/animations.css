@@ -1,0 +1,318 @@
+/* Animations CSS for BookMark - Mind Accelerating Reading Platform */
+
+/* Subtle animations and transitions for a more mature reading experience */
+
+/* Hover effects for cards */
+.feature-card:hover,
+.stat-card:hover,
+.book-card:hover,
+.quick-access-link:hover,
+.settings-group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Subtle button hover effects */
+.btn:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Page transitions */
+.page-transition {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Staggered fade-in for elements */
+.stagger-fade-in > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: staggerFadeIn 0.5s ease-out forwards;
+}
+
+.stagger-fade-in > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-fade-in > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-fade-in > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-fade-in > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-fade-in > *:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes staggerFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle float effect for cards */
+.float-effect {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Reading animations */
+.word-fade-in-scale {
+    animation: fadeInScale 0.3s ease-out;
+}
+
+.word-slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Book mode animation - left to right sliding text */
+@keyframes bookSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* New book mode animation for sequential word display */
+@keyframes sequentialWordSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+.book-slide-animation {
+    animation: bookSlideIn 0.5s ease-out;
+}
+
+.sequential-word-animation {
+    animation: sequentialWordSlide 0.8s ease-out;
+    position: absolute;
+    left: 0;
+}
+
+/* ORP (Optimal Recognition Point) subtle pulse */
+.orp-pulse {
+    animation: orpPulse 2s ease-in-out infinite;
+}
+
+@keyframes orpPulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+/* Subtle gradient animation for section titles */
+.section-title {
+    background-image: linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color),
+        var(--primary-color)
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientText 8s linear infinite;
+}
+
+@keyframes gradientText {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Subtle shadow effect */
+.shadow-pulse {
+    animation: shadowPulse 4s ease-in-out infinite;
+}
+
+@keyframes shadowPulse {
+    0% { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+    50% { box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); }
+    100% { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); }
+}
+
+/* Scroll reveal animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Book page turn animation */
+.page-turn {
+    transform-origin: left center;
+    animation: pageTurn 1.5s ease-in-out;
+}
+
+@keyframes pageTurn {
+    0% {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+    40% {
+        transform: rotateY(80deg);
+        opacity: 0.2;
+    }
+    100% {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+/* Focus animation for inputs */
+input:focus, 
+select:focus, 
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(58, 110, 165, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Button press effect */
+.btn:active {
+    transform: translateY(1px);
+    transition: all 0.1s ease;
+}
+
+/* Progress bar animation */
+.progress-bar {
+    transition: width 0.5s ease-out;
+}
+
+/* Loading animation */
+.loading {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.loading:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Demo reading animation effects */
+.demo-word {
+    transition: all 0.3s ease;
+}
+
+.reading-mode-tab {
+    position: relative;
+    overflow: hidden;
+}
+
+.reading-mode-tab:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.reading-mode-tab:hover:after,
+.reading-mode-tab.active:after {
+    width: 100%;
+}
+
+/* Page loaded animation */
+.page-loaded {
+    animation: pageLoaded 0.8s ease-out;
+}
+
+@keyframes pageLoaded {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Subtle background animation */
+.subtle-bg-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.subtle-bg-animation:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 70%);
+    animation: subtleBgMove 15s linear infinite;
+    z-index: -1;
+}
+
+@keyframes subtleBgMove {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
