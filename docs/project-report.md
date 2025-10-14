@@ -2,7 +2,9 @@
 
 
 
-\*\*Öğrenci:\*\* Taşkan Cihan  
+\*\*Öğrenci:\*\* Muhammet Cihan Taşkan
+
+Öğrenci no: 252011039
 
 \*\*GitHub:\*\* \[@carus10](https://github.com/carus10)  
 
