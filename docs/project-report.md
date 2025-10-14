@@ -773,7 +773,7 @@ Arka plan: `#1e293b` (Koyu gri) - Koyu tema
 
 
 
- Performans Metrikleri
+📋 Performans Metrikleri 📋
 
  İlk yükleme süresi: < 2 saniye
 
@@ -785,7 +785,7 @@ Arka plan: `#1e293b` (Koyu gri) - Koyu tema
 
 
 
- Tarayıcı Uyumluluğu
+📒 Tarayıcı Uyumluluğu 📒
 
  ✅ Chrome 90+
 
