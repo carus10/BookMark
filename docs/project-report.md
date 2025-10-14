@@ -1,16 +1,16 @@
-\# 📚 BookMark - Proje Raporu
+ 📚 BookMark - Proje Raporu
 
 
 
-\*\*Öğrenci:\*\* Muhammet Cihan Taşkan
+🌑Öğrenci:       Muhammet Cihan Taşkan
 
-Öğrenci no: 252011039
+🌑Öğrenci no:    252011039
 
-\*\*GitHub:\*\* \[@carus10](https://github.com/carus10)  
+🌑GitHub:       [@carus10](https://github.com/carus10)  
 
-\*\*Tarih:\*\* 14 Ekim 2025  
+🌑Tarih:        14 Ekim 2025  
 
-\*\*Proje Linki:\*\* \[https://carus10.github.io/BookMark/](https://carus10.github.io/BookMark/)
+🌑Proje Linki:  [https://carus10.github.io/BookMark/](https://carus10.github.io/BookMark/)
 
 
 
@@ -18,165 +18,160 @@
 
 
 
-\## 🧭 1. Adım – Proje Konusu Belirleme
+
+
+🖌️Proje Adı:
+
+BookMark - Mind Accelerating Reading Platform
 
 
 
-\### Proje Adı
-
-\*\*BookMark - Mind Accelerating Reading Platform\*\*
-
-
-
-\### Problem Tanımı
+🌟 Problem Tanımı
 
 Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanma problemi yaşıyor. Uzun metinlerde göz satır atlayabiliyor, kelimeler karışıyor veya dikkat hızlıca dağılıyor. Bu durum hem kitap okuma motivasyonunu hem de öğrenme verimini azaltıyor.
 
 
 
-\*\*İstatistiksel Veriler:\*\*
+✍️ İstatistiksel Veriler:
+ 
+ 🟩Ortalama bir yetişkin dakikada 200-300 kelime okur
+ 🟩Dijital ekranlarda okuma hızı %25 daha yavaştır
+ 🟩 Okuyucuların %60'ı uzun metinlerde odaklanma sorunu yaşar
+ 🟩Disleksi ve dikkat dağınıklığı yaşayan bireylerde bu oran %80'e çıkar
 
-\- Ortalama bir yetişkin dakikada 200-300 kelime okur
 
-\- Dijital ekranlarda okuma hızı %25 daha yavaştır
 
-\- Okuyucuların %60'ı uzun metinlerde odaklanma sorunu yaşar
+🌺 Çözüm (Proje Fikri)
 
-\- Disleksi ve dikkat dağınıklığı yaşayan bireylerde bu oran %80'e çıkar
+BookMark, okuma odaklanmasını artırmak için geliştirilen bir web uygulamasıdır. Kullanıcı, ister kendi metnini ister TXT/PDF dosyasını yükleyebilir. Uygulama, metni analiz ederek iki farklı okuma modu sunar:
 
 
 
-\### Çözüm (Proje Fikri)
+1. Klasik RSVP Modu (Odaklı Kelime Modu)
+   
+🟡Ekranda yalnızca bir kelime görünür
 
-\*\*BookMark\*\*, okuma odaklanmasını artırmak için geliştirilen bir web uygulamasıdır. Kullanıcı, ister kendi metnini ister TXT/PDF dosyasını yükleyebilir. Uygulama, metni analiz ederek iki farklı okuma modu sunar:
+🟡Kelimenin ortadaki harfi kırmızı renkle vurgulanır (ORP - Optimal Recognition Point)
 
+🟡Kullanıcı kelime hızını 100-1000 WPM arasında ayarlayabilir
 
+🟡Göz hareketi minimuma indirilir, odaklanma maksimize edilir
 
-\#### 1. Klasik RSVP Modu (Odaklı Kelime Modu)
 
-\- Ekranda yalnızca \*\*bir kelime\*\* görünür
 
-\- Kelimenin \*\*ortadaki harfi kırmızı\*\* renkle vurgulanır (ORP - Optimal Recognition Point)
+ 2. Kitap Simülasyonu Modu (Gerçek Kitap Deneyimi)
 
-\- Kullanıcı kelime hızını \*\*100-1000 WPM\*\* arasında ayarlayabilir
+ 🍈Kelimeler soldan sağa doğru  akarak ekranda ilerler
 
-\- Göz hareketi minimuma indirilir, odaklanma maksimize edilir
+ 🍈Sayfa geçişleri gerçek kitap deneyimini simüle eder
 
+ 🍈Kullanıcının gözü satır takibi yapar, ama dikkat dağılmadan sırayla her kelimeye odaklanır
 
+ 🍈Daha doğal okuma deneyimi sunar
 
-\#### 2. Kitap Simülasyonu Modu (Gerçek Kitap Deneyimi)
 
-\- Kelimeler \*\*soldan sağa doğru\*\* akarak ekranda ilerler
 
-\- Sayfa geçişleri gerçek kitap deneyimini simüle eder
+ ✨ Ek Özellikler
 
-\- Kullanıcının gözü satır takibi yapar, ama dikkat dağılmadan sırayla her kelimeye odaklanır
+✅ Hız Kontrolü:100-1000 WPM arası ayarlanabilir okuma hızı  
 
-\- Daha doğal okuma deneyimi sunar
+✅ İstatistik Takibi: Okunan kelime sayısı, süre, ortalama hız  
 
+✅ Kitap Yönetimi: Kütüphane sistemi ile çoklu kitap desteği  
 
+✅ Son Konum Kaydetme: Kaldığınız yerden devam etme  
 
-\#### Ek Özellikler
+✅ Responsive Tasarım:  Mobil, tablet ve masaüstü uyumlu  
 
-✅ \*\*Hız Kontrolü:\*\* 100-1000 WPM arası ayarlanabilir okuma hızı  
+✅ Tam Ekran Modu: Dikkat dağıtıcı unsurları kaldırma  
 
-✅ \*\*İstatistik Takibi:\*\* Okunan kelime sayısı, süre, ortalama hız  
 
-✅ \*\*Kitap Yönetimi:\*\* Kütüphane sistemi ile çoklu kitap desteği  
 
-✅ \*\*Son Konum Kaydetme:\*\* Kaldığınız yerden devam etme  
+✨ Hedef Kullanıcılar
 
-✅ \*\*Responsive Tasarım:\*\* Mobil, tablet ve masaüstü uyumlu  
+ 🎓 Üniversite öğrencileri - Akademik makale ve kitap okuma
 
-✅ \*\*Tam Ekran Modu:\*\* Dikkat dağıtıcı unsurları kaldırma  
+ 📖 Kitap severler  - Daha hızlı ve verimli okuma deneyimi
 
+ 🧠 Dikkat dağınıklığı yaşayanlar - ADHD, odaklanma problemi
 
+ 📚 Disleksi eğilimi olanlar - Kelimeleri daha net algılama
 
-\### Hedef Kullanıcılar
+ 💼 Profesyoneller - Hızlı rapor ve döküman okuma
 
-\- 🎓 \*\*Üniversite öğrencileri\*\* - Akademik makale ve kitap okuma
+ 🌍 Yabancı dil öğrenenler - Kelime tanıma ve hız geliştirme
 
-\- 📖 \*\*Kitap severler\*\* - Daha hızlı ve verimli okuma deneyimi
 
-\- 🧠 \*\*Dikkat dağınıklığı yaşayanlar\*\* - ADHD, odaklanma problemi
 
-\- 📚 \*\*Disleksi eğilimi olanlar\*\* - Kelimeleri daha net algılama
+ 🎨 Kullanılan Araçlar ve Gerekçeleri
 
-\- 💼 \*\*Profesyoneller\*\* - Hızlı rapor ve döküman okuma
 
-\- 🌍 \*\*Yabancı dil öğrenenler\*\* - Kelime tanıma ve hız geliştirme
 
+ 🌀1. Manus.ai
 
+Kullanım Amacı Kullanıcı arayüzü tasarımı ve prototipleme  
 
-\### Kullanılan Araçlar ve Gerekçeleri
+Gerekçe 
 
+ Yapay zeka destekli tasarım önerileri sayesinde modern ve kullanıcı dostu arayüz tasarımı yapıldı
 
+ Renk paleti ve tipografi seçiminde bilimsel temelli öneriler alındı
 
-\#### 1. \*\*Manus.ai\*\*
+ Responsive tasarım için farklı ekran boyutlarında test imkanı sundu
 
-\*\*Kullanım Amacı:\*\* Kullanıcı arayüzü tasarımı ve prototipleme  
+ Hız okuma için optimal görsel hiyerarşi oluşturulmasına yardımcı oldu
 
-\*\*Gerekçe:\*\* 
 
-\- Yapay zeka destekli tasarım önerileri sayesinde modern ve kullanıcı dostu arayüz tasarımı yapıldı
 
-\- Renk paleti ve tipografi seçiminde bilimsel temelli öneriler alındı
+🌀 2. Google Gemini
 
-\- Responsive tasarım için farklı ekran boyutlarında test imkanı sundu
+Kullanım Amacı Kod optimizasyonu ve algoritma geliştirme  
 
-\- Hız okuma için optimal görsel hiyerarşi oluşturulmasına yardımcı oldu
+Gerekçe
 
+ RSVP algoritmasının matematiksel hesaplamalarında yardımcı oldu
 
+ Kelime analizi ve ORP (Optimal Recognition Point) belirleme mantığı geliştirildi
 
-\#### 2. \*\*Google Gemini\*\*
+ LocalStorage veri yapısının optimize edilmesinde destek sağladı
 
-\*\*Kullanım Amacı:\*\* Kod optimizasyonu ve algoritma geliştirme  
+ Performans iyileştirmeleri ve kod refactoring önerileri sundu
 
-\*\*Gerekçe:\*\*
+ Karmaşık JavaScript fonksiyonlarının daha temiz ve okunabilir hale getirilmesine katkıda bulundu
 
-\- RSVP algoritmasının matematiksel hesaplamalarında yardımcı oldu
 
-\- Kelime analizi ve ORP (Optimal Recognition Point) belirleme mantığı geliştirildi
 
-\- LocalStorage veri yapısının optimize edilmesinde destek sağladı
+ 🌀3. GitHub Copilot
 
-\- Performans iyileştirmeleri ve kod refactoring önerileri sundu
+Kullanım Amacı Kod yazımı ve geliştirme hızlandırma  
 
-\- Karmaşık JavaScript fonksiyonlarının daha temiz ve okunabilir hale getirilmesine katkıda bulundu
+Gerekçe
 
+ Tekrarlayan kod bloklarının otomatik tamamlanması ile geliştirme süresi %40 azaltıldı
 
+ CSS animasyonlarının smooth ve performanslı yazılmasında yardımcı oldu
 
-\#### 3. \*\*GitHub Copilot\*\*
+ JavaScript event handler'larının best practice'lere uygun yazılmasını sağladı
 
-\*\*Kullanım Amacı:\*\* Kod yazımı ve geliştirme hızlandırma  
+ Hata yönetimi (error handling) kodlarının eklenmesinde destek verdi
 
-\*\*Gerekçe:\*\*
+ Cross-browser uyumluluk için alternatif kod önerileri sundu
 
-\- Tekrarlayan kod bloklarının otomatik tamamlanması ile geliştirme süresi %40 azaltıldı
 
-\- CSS animasyonlarının smooth ve performanslı yazılmasında yardımcı oldu
 
-\- JavaScript event handler'larının best practice'lere uygun yazılmasını sağladı
+ 🌀 4. Git ve GitHub
 
-\- Hata yönetimi (error handling) kodlarının eklenmesinde destek verdi
+Kullanım Amacı Versiyon kontrolü ve proje yönetimi  
 
-\- Cross-browser uyumluluk için alternatif kod önerileri sundu
+Gerekçe
 
+ Kod değişikliklerinin sistematik takibi
 
+ Hata durumunda önceki versiyonlara dönebilme
 
-\#### 4. \*\*Git \& GitHub\*\*
+ GitHub Pages ile ücretsiz hosting
 
-\*\*Kullanım Amacı:\*\* Versiyon kontrolü ve proje yönetimi  
-
-\*\*Gerekçe:\*\*
-
-\- Kod değişikliklerinin sistematik takibi
-
-\- Hata durumunda önceki versiyonlara dönebilme
-
-\- GitHub Pages ile ücretsiz hosting
-
-\- Proje dokümantasyonunun merkezi yönetimi
+ Proje dokümantasyonunun merkezi yönetimi
 
 
 
@@ -184,11 +179,9 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\## 🧠 2. Adım – Bilgi Mimarisi ve Arayüz Tasarımı
 
 
-
-\### Site Haritası / Ekran Akışı
+🟥 Site Haritası / Ekran Akışı🟥
 
 
 
@@ -318,31 +311,31 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\### Kullanıcı Rolleri
+ 🟥Kullanıcı Rolleri🟥
 
 
 
-\#### 1. \*\*Kullanıcı (Reader)\*\*
+🌸 1. Kullanıcı (Reader
 
-\*\*Yetkiler:\*\*
+Yetkiler
 
-\- ✅ Kitap yükleme (TXT/PDF formatında)
+ ✅ Kitap yükleme (TXT/PDF formatında)
 
-\- ✅ Kütüphanede kitap yönetimi (silme, görüntüleme)
+ ✅ Kütüphanede kitap yönetimi (silme, görüntüleme)
 
-\- ✅ Okuma modu seçme
+ ✅ Okuma modu seçme
 
-\- ✅ Hız ayarları yapma (100-1000 WPM)
+ ✅ Hız ayarları yapma (100-1000 WPM)
 
-\- ✅ Tema ve görünüm ayarları
+ ✅ Tema ve görünüm ayarları
 
-\- ✅ Kişisel istatistikleri görüntüleme
+ ✅ Kişisel istatistikleri görüntüleme
 
-\- ✅ Son okunan pozisyondan devam etme
+ ✅ Son okunan pozisyondan devam etme
 
 
 
-\*\*Kullanım Senaryosu:\*\*
+𖤓 Kullanım Senaryosu 𖤓
 
 1\. Ana sayfadan "Kütüphanem" sayfasına gider
 
@@ -362,31 +355,31 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\#### 2. \*\*Yönetici / Geliştirici (Admin - Beta Sürümü İçin)\*\*
+ 𓆩❤︎𓆪 2. Yönetici / Geliştirici (Admin - Beta Sürümü İçin)
 
-\*\*Yetkiler:\*\*
+Yetkiler
 
-\- ✅ Sistem testlerini yapma
+ ✅ Sistem testlerini yapma
 
-\- ✅ Metin dönüştürme hatalarını kontrol etme
+ ✅ Metin dönüştürme hatalarını kontrol etme
 
-\- ✅ Kullanıcı geri bildirimlerini inceleme
+ ✅ Kullanıcı geri bildirimlerini inceleme
 
-\- ✅ Performans metriklerini analiz etme
+ ✅ Performans metriklerini analiz etme
 
-\- ✅ Beta sürümü hata loglarını görüntüleme
-
-
-
-\*\*Not:\*\* Mevcut versiyonda admin paneli bulunmuyor, gelecek sürümlerde eklenecek.
+ ✅ Beta sürümü hata loglarını görüntüleme
 
 
 
-\### Wireframe / Taslak Görsel Açıklaması
+Not Mevcut versiyonda admin paneli bulunmuyor, gelecek sürümlerde eklenecek.
 
 
 
-\#### 1. Ana Sayfa (index.html)
+ Wireframe / Taslak Görsel Açıklaması
+
+
+
+🦅 1. Ana Sayfa (index.html) 🦅
 
 ```
 
@@ -442,7 +435,7 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\#### 2. Kütüphane Sayfası (library.html)
+💫 2. Kütüphane Sayfası (library.html) 💫
 
 ```
 
@@ -494,11 +487,11 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\#### 3. Okuma Ekranı (reader.html)
+🪽 3. Okuma Ekranı (reader.html) 🪽
 
 
 
-\*\*Klasik RSVP Modu:\*\*
+Klasik RSVP Modu
 
 ```
 
@@ -548,7 +541,7 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\*\*Kitap Simülasyonu Modu:\*\*
+📜 Kitap Simülasyonu Modu: 📜
 
 ```
 
@@ -594,7 +587,7 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\#### 4. Ayarlar Sayfası (settings.html)
+⚙️ 4. Ayarlar Sayfası (settings.html) ⚙️
 
 ```
 
@@ -644,7 +637,7 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\#### 5. İstatistikler Sayfası (statistics.html)
+ 🌐 5. İstatistikler Sayfası (statistics.html) 🌐
 
 ```
 
@@ -698,111 +691,63 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\### Tasarım Prensipleri
+🎯 Tasarım Prensipleri 🎯 
 
 
 
-\#### 1. \*\*Minimalizm ve Odaklanma\*\*
+🍃  1. Minimalizm ve Odaklanma
 
-\- Okuma sırasında dikkat dağıtıcı unsurlar minimum seviyede
+ Okuma sırasında dikkat dağıtıcı unsurlar minimum seviyede
 
-\- Merkez odak noktası her zaman net ve belirgin
+ Merkez odak noktası her zaman net ve belirgin
 
-\- Gereksiz renkler ve animasyonlar kullanılmadı
-
-
-
-\#### 2. \*\*Renk Paleti\*\*
-
-\- \*\*Primer:\*\* `#6366f1` (İndigo) - Butonlar ve vurgular
-
-\- \*\*Sekonder:\*\* `#8b5cf6` (Mor) - Premium özellikler
-
-\- \*\*Accent:\*\* `#ef4444` (Kırmızı) - ORP (Optimal Recognition Point)
-
-\- \*\*Arka plan:\*\* `#1e293b` (Koyu gri) - Koyu tema
-
-\- \*\*Metin:\*\* `#f8fafc` (Açık beyaz) - Ana metin
+ Gereksiz renkler ve animasyonlar kullanılmadı
 
 
 
-\#### 3. \*\*Tipografi\*\*
+  🍃 2. Renk Paleti
 
-\- Ana font: `Inter, system-ui, sans-serif`
+  Primer `#6366f1` (İndigo) - Butonlar ve vurgular
 
-\- Okuma alanı: `Georgia, serif` (daha iyi okunabilirlik)
+ Sekonder `#8b5cf6` (Mor) - Premium özellikler
 
-\- Font boyutu: 18px-32px arası ayarlanabilir
+ Accent: `#ef4444` (Kırmızı) - ORP (Optimal Recognition Point)
 
+Arka plan: `#1e293b` (Koyu gri) - Koyu tema
 
-
-\#### 4. \*\*Responsive Tasarım\*\*
-
-\- \*\*Mobil (320px-768px):\*\* Tek sütun, büyük butonlar
-
-\- \*\*Tablet (768px-1024px):\*\* Esnek grid sistemi
-
-\- \*\*Masaüstü (1024px+):\*\* Tam özellikli arayüz
+ Metin: `#f8fafc` (Açık beyaz) - Ana metin
 
 
 
-\#### 5. \*\*Erişilebilirlik (Accessibility)\*\*
+🍃3. Tipografi
 
-\- ✅ Klavye navigasyonu desteği (Space, Arrow keys)
+ Ana font: `Inter, system-ui, sans-serif`
 
-\- ✅ Yüksek kontrast oranı (WCAG AA standardı)
+ Okuma alanı: `Georgia, serif` (daha iyi okunabilirlik)
 
-\- ✅ Ekran okuyucu uyumluluğu (ARIA labels)
-
-\- ✅ Odak göstergeleri (focus indicators)
+ Font boyutu: 18px-32px arası ayarlanabilir
 
 
 
----
+ 🍃4. Responsive Tasarım
+
+ Mobil (320px-768px): Tek sütun, büyük butonlar
+
+ Tablet (768px-1024px): Esnek grid sistemi
+
+ Masaüstü (1024px+): Tam özellikli arayüz
 
 
 
-\## 📊 Teknik Özellikler
+ 🍃5. Erişilebilirlik (Accessibility
 
+ ✅ Klavye navigasyonu desteği (Space, Arrow keys)
 
+ ✅ Yüksek kontrast oranı (WCAG AA standardı)
 
-\### Kullanılan Teknolojiler
+ ✅ Ekran okuyucu uyumluluğu (ARIA labels)
 
-\- \*\*Frontend:\*\* HTML5, CSS3, JavaScript (ES6+)
-
-\- \*\*API:\*\* File API, LocalStorage API, Fullscreen API
-
-\- \*\*Kütüphaneler:\*\* Font Awesome Icons
-
-\- \*\*Deployment:\*\* GitHub Pages
-
-\- \*\*Version Control:\*\* Git \& GitHub
-
-
-
-\### Performans Metrikleri
-
-\- İlk yükleme süresi: < 2 saniye
-
-\- Kelime render süresi: < 16ms (60 FPS)
-
-\- LocalStorage kullanımı: < 5MB
-
-\- Responsive breakpoint'ler: 3 adet
-
-
-
-\### Tarayıcı Uyumluluğu
-
-\- ✅ Chrome 90+
-
-\- ✅ Firefox 88+
-
-\- ✅ Safari 14+
-
-\- ✅ Edge 90+
-
-\- ⚠️ IE11 desteklenmiyor
+ ✅ Odak göstergeleri (focus indicators)
 
 
 
@@ -810,59 +755,47 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\## 🎯 Gelecek Planları (Roadmap)
+ 📊 Teknik Özellikler
 
 
 
-\### v2.0 (Planlanan)
+ Kullanılan Teknolojiler
 
-\- \[ ] PDF okuma desteği iyileştirme
+ Frontend HTML5, CSS3, JavaScript (ES6+)
 
-\- \[ ] Sesli okuma (Text-to-Speech)
+ API File API, LocalStorage API, Fullscreen API
 
-\- \[ ] Çoklu dil desteği (İngilizce, Türkçe, vb.)
+ Kütüphaneler Font Awesome Icons
 
-\- \[ ] Bulut senkronizasyonu
+ Deployment GitHub Pages
 
-\- \[ ] Mobil uygulama (React Native)
-
-
-
-\### v2.5 (Gelecek)
-
-\- \[ ] AI destekli özetleme
-
-\- \[ ] Anlama testleri
-
-\- \[ ] Sosyal özellikler (arkadaşlarla yarışma)
-
-\- \[ ] E-kitap formatları desteği (EPUB, MOBI)
+ Version Control: Git \& GitHub
 
 
 
----
+ Performans Metrikleri
+
+ İlk yükleme süresi: < 2 saniye
+
+ Kelime render süresi: < 16ms (60 FPS)
+
+ LocalStorage kullanımı: < 5MB
+
+ Responsive breakpoint'ler: 3 adet
 
 
 
-\## 📸 Ekran Görüntüleri
+ Tarayıcı Uyumluluğu
 
+ ✅ Chrome 90+
 
+ ✅ Firefox 88+
 
-\*(Ekran görüntülerini `docs/screenshots/` klasörüne ekleyin)\*
+ ✅ Safari 14+
 
+ ✅ Edge 90+
 
-
-\- `homepage.png` - Ana sayfa ve demo
-
-\- `library.png` - Kütüphane yönetimi
-
-\- `reader-rsvp.png` - Klasik RSVP okuma modu
-
-\- `reader-book.png` - Kitap simülasyonu modu
-
-\- `statistics.png` - İstatistik sayfası
-
-\- `settings.png` - Ayarlar paneli
+ ⚠️ IE11 desteklenmiyor
 
 
 
@@ -870,7 +803,63 @@ Günümüzde özellikle dijital ortamlarda okuma yaparken birçok insan odaklanm
 
 
 
-\## 🙏 Kaynakça
+ 🎯 Gelecek Planları (Roadmap)
+
+
+
+ v2.0 (Planlanan)
+
+ [ ] PDF okuma desteği iyileştirme
+
+ [ ] Sesli okuma (Text-to-Speech)
+
+ [ ] Çoklu dil desteği (İngilizce, Türkçe, vb.)
+
+ [ ] Bulut senkronizasyonu
+
+ [ ] Mobil uygulama (React Native)
+
+
+
+ v2.5 (Gelecek)
+
+[ ] AI destekli özetleme
+
+[ ] Anlama testleri
+
+[ ] Sosyal özellikler (arkadaşlarla yarışma)
+
+[ ] E-kitap formatları desteği (EPUB, MOBI)
+
+
+
+---
+
+
+
+ 📸 Ekran Görüntüleri
+
+
+
+ `homepage.png` - Ana sayfa ve demo
+
+ `library.png` - Kütüphane yönetimi
+
+ `reader-rsvp.png` - Klasik RSVP okuma modu
+
+ `reader-book.png` - Kitap simülasyonu modu
+
+`statistics.png` - İstatistik sayfası
+
+ `settings.png` - Ayarlar paneli
+
+
+
+---
+
+
+
+ 🙏 Kaynakça
 
 
 
